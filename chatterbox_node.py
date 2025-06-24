@@ -25,7 +25,7 @@ def patched_torch_load(*args, **kwargs):
         kwargs['map_location'] = torch.device(device)
     return original_torch_load(*args, **kwargs)
 
-torch.load = patched_torch_load
+# torch.load = patched_torch_load
 
 
 class AudioNodeBase:
